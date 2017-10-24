@@ -1,0 +1,34 @@
+@import "_variables";
+nav {
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  display: grid;
+  border-bottom: 1px solid $border-color;
+  ul {
+    text-align: right;
+    li {
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+
+    }
+  }
+}
+
+
+img {
+  width: 6rem;
+  height: auto;
+}
+.hilighted {
+  background-color: $secundary-color;
+  padding: 1rem;
+  border-radius: .4rem;
+  margin-bottom: 0;
+  a {
+    color: $body-bg-color;
+    font-weight: 200;
+  }
+}

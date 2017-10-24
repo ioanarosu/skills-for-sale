@@ -1,0 +1,30 @@
+@import "_variables";
+.search-area__title {
+  font-size: 3.4rem;
+  line-height: 1.4;
+}
+.next-row {
+  display: block;
+}
+.search-area__box {
+  display: flex;
+
+  input{
+    flex: 1 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem 0 .5rem 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+  }
+  .btn {
+    flex: 1 0 auto;
+    font-family: $body-font;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1.6rem .8rem;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

@@ -1,0 +1,70 @@
+@import "_variables";
+@import "_normalize";
+
+html { font-size: 62.5%; }  /* =10px */
+
+body {
+  font-family: $body-font;
+  color: $body-color;
+}
+h1, h2, h3 {
+  font-family: $heading-font;
+  font-weight: 400;
+  color: $heading-color;
+  margin-top: 0;
+}
+
+header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: $body-bg-color;
+  padding: 2rem;
+  display: grid;
+}
+@import "header";
+@import "search";
+
+.wrap {
+  margin: 2rem;
+}
+
+///////////////////////////  MOST POPULAR///////////////////
+
+.underlined {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+  }
+.semi-line {
+  width: 6.5rem;
+  height: .6rem;
+  border-radius: 4px;
+  background-color: $primary-color;
+
+}
+.pr-category {
+  background-color: $secundary-color;
+  color: $category-name-color;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  svg {
+    width: auto;
+    height: 3rem;
+    fill: $category-name-color;
+
+  }
+}
+///////////////////////////  END MOST POPULAR///////////////
+
+
