@@ -40,6 +40,13 @@ footer {
     "main main"
     "footer footer";
 }
+.border {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: $border-color;
+  margin: 2rem 0;
+}
 .centered {
   position: absolute;
   top: 50%;

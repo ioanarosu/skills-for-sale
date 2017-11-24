@@ -1,41 +1,41 @@
 @import "_variables";
 .project-page {
   .avatar {
-      text-align: center;
-      &__image {
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-        background-color: $secundary-color;
-        overflow: hidden;
-        position: relative;
-        img {
-          max-width: 8rem;
-          height: auto;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-        &--small {
-          width: 5rem;
-          height:5rem;
-        }
-
+    text-align: center;
+    &__image {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      background-color: $secundary-color;
+      overflow: hidden;
+      position: relative;
+      img {
+        max-width: 8rem;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
-      &__name {
-        font-size: 1.4rem;
-        font-weight: 400;
-        margin: .5rem 0 0 0;
-        span {
-          font-style: italic;
-          font-weight: 300;
-          font-size:1.2rem;
-          white-space: nowrap;
-        }
+
+      &--small {
+        width: 5rem;
+        height:5rem;
+      }
+
+    }
+    &__name {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: .5rem 0 0 0;
+      span {
+        font-style: italic;
+        font-weight: 300;
+        font-size:1.2rem;
+        white-space: nowrap;
       }
     }
+  }
   &__infos {
     display: grid;
     align-items: center;
@@ -44,7 +44,7 @@
       display: grid;
       grid-template-columns: 1fr 6rem;
       &__left {
-      font-size: 1.7rem;
+        font-size: 1.7rem;
 
         h2 {
           font-size: 3.4rem;
@@ -191,8 +191,6 @@
   &__bidders {
     display: flex;
     overflow: scroll;
-    grid-column-start: 1;
-    grid-column-end:   3;
     margin: 2rem 0;
     padding-bottom: 2rem;
     border-bottom: 1px solid $border-color;
@@ -203,12 +201,6 @@
       box-shadow: none;
       margin-right: 2.5rem;
       padding:0;
-      &__img {
-        width: 12rem;
-        height: 10rem;
-        margin: .5rem auto;
-        border-radius: 0;
-      }
       &__title {
         text-align: center;
         font-weight: 400;
@@ -238,7 +230,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     width: 35rem;
-    margin: 2rem auto;
+    margin: 5rem auto;
     padding: 1rem;
     border: 1px solid $secundary-color;
     display: grid;
@@ -266,19 +258,51 @@ and (max-width: 1024px) {
       grid-column-gap: 2rem;
       .project-details {
        align-items: start;
-      &__images {
+       &__images {
         display: none;
       }
-  }
-    }
-    .gallery {
-      display: inline-grid;
     }
   }
+  .gallery {
+    display: inline-grid;
+  }
+}
 
 
 }
-// @media only screen
-// and (min-width: 1024px) {
+@media only screen
+and (min-width: 1024px) {
+  .project-page {
+    &__infos {
+      align-items: left;
+      grid-template-columns: 1fr 32rem;
+      grid-column-gap: 2rem;
+      .project-details {
+       align-items: start;
+       &__images {
+        display: none;
+      }
+    }
 
-// }
+    .gallery {
+      display: inline-grid;
+    }
+
+  }
+  &__contest {
+    margin-top: 8rem;
+  }
+  &__bidders {
+    .project-card {
+      min-width: 18rem;
+    }
+  }
+  .take-btn {
+    width: 25rem;
+  }
+  .response {
+    width: 55rem;
+  }
+}
+
+}

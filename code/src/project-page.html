@@ -17,14 +17,14 @@
             <span class="project-details__price">$200</span>
 
 
-          <span class="project-details__date">
-            <partial src="svg/calendar.svg"></partial>
-            <span>09.23.2018</span>
-          </span>
-          <a class="project-details__images" href="">View Photos</a>
+            <span class="project-details__date">
+              <partial src="svg/calendar.svg"></partial>
+              <span>09.23.2018</span>
+            </span>
+            <a class="project-details__images" href="">View Photos</a>
 
-        </div>
-        <a class="avatar" href="#">
+          </div>
+          <a class="avatar" href="#">
             <div class="avatar__image">
               <img src="images/avatar.jpg" alt="">
             </div>
@@ -63,10 +63,10 @@
 
 
      <ul class="project-page__contest">
-      <li><a href="">Bidders (12)</a></li>
-      <li><a class="active" href="">Comments (32)</a></li>
+      <li><a href="#bidders">Bidders (12)</a></li>
+      <li><a class="active" href="#comments">Comments (32)</a></li>
     </ul>
-    <div class="project-page__bidders">
+    <div class="project-page__bidders" id="bidders">
       <a href="">
         <div class="project-card">
           <div class="project-card__img">
@@ -135,9 +135,29 @@
     <div class="project-card__time">1 week ago</div>
   </div>
 </a>
+<a href="">
+  <div class="project-card">
+    <div class="project-card__img">
+
+      <img src="images/constructor-avatar.jpg" alt="">
+
+    </div>
+
+    <div class="project-card__title">Joe Doe</div>
+    <div class="project-card__reviews">
+      <partial src="svg/star.svg"></partial>
+      <partial src="svg/star.svg"></partial>
+      <partial src="svg/star.svg"></partial>
+      <partial src="svg/star.svg"></partial>
+      <partial src="svg/star.svg"></partial>
+      <span class="totalrew">22 reviews</span>
+    </div>
+    <div class="project-card__time">1 hour ago</div>
+  </div>
+</a>
 </div>
 
-<div class="project-page__comments">
+<div class="project-page__comments" id="comments">
   <div class="avatar">
     <div class="avatar__image avatar__image--small">
       <img src="images/avatar.jpg" alt="">
@@ -179,17 +199,6 @@
     Read more
   </span>
 </div>
-
-<div class="take-btn">Take the project</div>
-<div class="response">
-  <div class="avatar__image avatar__image--small">
-    <img src="images/constructor-avatar.jpg" alt="">
-  </div>
-  <span class="response__placeholder">Write a comment...</span>
-  <a href="">
-    <button class="btn-send">send</button>
-  </a>
-</div>
 <ul class="pagination">
   <li><a href="">
     <div class="pagination__full-circle">
@@ -217,6 +226,84 @@
   </a>
 </li>
 </ul>
+<div class="response">
+  <div class="avatar__image avatar__image--small">
+    <img src="images/constructor-avatar.jpg" alt="">
+  </div>
+  <span class="response__placeholder">Write a comment...</span>
+  <a href="">
+    <button class="btn-send">send</button>
+  </a>
+</div>
+<div class="border"></div>
+<h2 class="title-underlined">Similar Jobs</h2>
+  <div class="semi-line"></div>
+  <div class="projects-container">
+    <a href="/project-page.html">
+      <div class="project-card">
+        <div class="project-card__img"><img src="images/teacher.jpg"></div>
+        <span class="project-card__price-box">$200</span>
+        <div class="small-wrap">
+          <div class="project-card__job ">English Classes</div>
+          <div class="project-card__title">
+            Ema Watson
+          </div>
+          <div class="project-card__reviews">
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <span class="totalrew">22 reviews</span>
+          </div>
+
+          <div class="project-card__details">
+            <partial src="svg/placeholder.svg"></partial>
+            <span>City Name</span>
+          </div>
+          <div class="project-card__details">
+            <partial src="svg/calendar.svg"></partial>
+            <span>22.08.2017</span>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="job-type">Teaching</div>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="/project-page.html">
+      <div class="project-card">
+        <div class="project-card__img"><img src="images/teacher.jpg"></div>
+        <span class="project-card__price-box">$200</span>
+        <div class="small-wrap">
+          <div class="project-card__job ">English Classes English Classes</div>
+          <div class="project-card__title">
+            Ema Watson
+          </div>
+          <div class="project-card__reviews">
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <partial src="svg/star.svg"></partial>
+            <span class="totalrew">22 reviews</span>
+          </div>
+
+          <div class="project-card__details">
+            <partial src="svg/placeholder.svg"></partial>
+            <span>City Name</span>
+          </div>
+          <div class="project-card__details">
+            <partial src="svg/calendar.svg"></partial>
+            <span>22.08.2017</span>
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="job-type">Teaching</div>
+        </div>
+      </div>
+    </a>
+  </div>
 
 
 
