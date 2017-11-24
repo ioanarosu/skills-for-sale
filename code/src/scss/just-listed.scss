@@ -1,0 +1,102 @@
+@import "_variables";
+
+.projects-container {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+  overflow: scroll;
+}
+.project-card {
+  background:$body-bg-color;
+  height: 100%;
+  box-shadow: 0 0 4px 0 rgb(186, 204, 203);
+  min-width: 18rem;
+  margin:2px;
+  position: relative;
+
+  &__img {
+    height: 10rem;
+    width: auto;
+    position:relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      width: 135%;
+    }
+  }
+  &__price-box {
+    background-color: $primary-color;
+    color: $body-bg-color;
+    padding: .7rem;
+    font-size: 1.4rem;
+    font-weight:300;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    letter-spacing: 0.52px;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  &__job {
+    white-space: nowrap;
+    color: $secundary-color;
+    margin-bottom:.8rem;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: $body-font;
+    min-width: 18rem;
+    max-width:25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__reviews {
+    margin-bottom: 1rem;
+    .totalrew {
+      padding-left: .5rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+    svg {
+      width: 1rem;
+      height: auto;
+      fill: $secundary-color;
+    }
+  }
+  &__title {
+    font-size:1.6rem;
+    font-weight: 300;
+    margin: .6rem 0;
+  }
+  &__details {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    svg {
+      width: 1.6rem;
+      height: auto;
+      fill: $body-color;
+      margin-right: .6rem;
+    }
+  }
+  &:hover {
+    box-shadow: 0 2px 6px 0 $category-name-color;
+  }
+}
+.horizontal-line {
+  height: .1rem;
+  background-color: $category-name-color;
+  margin: 1.5rem 0;
+}
+.job-type {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+

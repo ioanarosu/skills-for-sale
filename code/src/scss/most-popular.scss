@@ -1,0 +1,119 @@
+@import "_variables";
+.title-underlined {
+    margin-bottom: .5rem;
+    font-size: 2.4rem;
+  }
+.semi-line {
+  width: 4.5rem;
+  height: .6rem;
+  border-radius: 4px;
+  background-color: $primary-color;
+
+}
+.job-category {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .1rem;
+  background-color: rgba(0, 104, 111, 0.78);
+  &__box {
+    text-align: center;
+    background-color: $secundary-color;
+    padding: 5rem .3rem;
+    position:relative;
+
+    &:hover {
+      .job-category__items{
+        opacity: 1;
+        // a {
+        // transform: scale(1);
+        // transition-duration: 800ms;
+        // }
+      }
+    }
+  }
+  &__items {
+    display: grid;
+    align-content: center;
+    opacity: 0;
+    background-color: darken($secundary-color, 5%);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1000ms;
+    a {
+      color: $category-name-color;
+      padding: .5rem;
+      display: inline-block;
+      // transform: scale(1.3);
+      // transition-duration: 3000ms;
+      &:hover {
+        color: $body-bg-color;
+      }
+    }
+    .more {
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+  &__title {
+    color: $category-name-color;
+    font-family: $body-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-top: 1.2rem;
+    line-height: 1.3;
+  }
+  svg {
+    width: auto;
+    height: 3rem;
+    fill: $category-name-color;
+
+  }
+}
+.expand-listing {
+  text-align: right;
+
+  a {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $body-color;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:.5rem;
+    border: 1px solid $body-color;
+    text-align: center;
+    border-radius:.3rem;
+  }
+  svg {
+    width: 1rem;
+    height: auto;
+    fill: $body-color;
+    margin-left: 1rem;
+  }
+}
+
+
+////////////////////////////RESPONSIVE//////////////////////
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px) {
+  .job-category {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+@media only screen
+  and (min-width: 1024px) {
+    .job-category {
+    grid-template-columns: repeat(5, 1fr);
+    &__box {
+      padding: 8rem .3rem;
+    }
+  }
+}

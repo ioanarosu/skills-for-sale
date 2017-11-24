@@ -1,12 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="54px" viewBox="0 0 64 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>001-watering-can</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="watering-can" transform="translate(0.000000, -5.000000)">
-            <image id="001-watering-can" x="0" y="0" width="64" height="64" xlink:href="data:image/png;base64,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"></image>
-        </g>
-    </g>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="101.85px" height="101.85px" viewBox="0 0 101.85 101.85" style="enable-background:new 0 0 101.85 101.85;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path d="M71.534,16.607c0,0-18.458,0.476-25.439,10.029c-6.979,9.553-11.252,8.663-11.252,8.663l4.62,5.999L71.534,16.607z"/>
+		<path d="M93.26,44.827c3.512-11.798,5.021-24.953-4.723-33.245c-8.401-7.152-11.402,2.081-12.717,10.59l-2.553-3.318
+			L41.199,43.548l10.212,13.268l-28.687-3.897c-1.009-3.311-3.641-5.95-7.053-6.865c-0.38-0.191-0.782-0.325-1.209-0.368
+			c-0.228-0.021-0.458,0.033-0.679,0.06c-0.04-0.004-0.07-0.021-0.106-0.021v0.023c-2.803,0.421-5.326,4.444-5.852,9.582
+			c-0.258,2.557-0.027,5.038,0.662,6.975c0.812,2.293,2.193,3.648,3.879,3.819c0.498,0.051,0.993-0.014,1.48-0.175
+			c3.917-0.314,7.229-2.851,8.617-6.437l34.646,4.708l12.672,16.458l32.069-24.694L93.26,44.827z M12.559,63.256
+			c-0.487-0.133-1.023-0.849-1.395-1.902c-0.544-1.529-0.729-3.617-0.512-5.739c0.358-3.515,1.64-5.947,2.74-6.796
+			c0.032-0.024,0.063-0.031,0.089-0.056L12.559,63.256z M91.255,42.217L78.258,25.335c0.185-1.749,0.383-3.497,0.663-5.241
+			c0.404-2.458,1.014-4.956,2.327-7.098c2.793-4.542,8.207,3.936,9.312,5.905C94.475,25.904,93.535,34.237,91.255,42.217z"/>
+		<path d="M0,85.699c0,1.021,0.826,1.849,1.846,1.849c1.02,0,1.844-0.828,1.844-1.849c0-1.02-1.844-3.128-1.844-3.128
+			S0,84.679,0,85.699z"/>
+		<path d="M12.528,89.518c0,1.828,1.479,3.31,3.311,3.31c1.826,0,3.311-1.481,3.311-3.31c0-1.831-3.311-5.608-3.311-5.608
+			S12.528,87.687,12.528,89.518z"/>
+		<path d="M9.864,69.738c0,0-3.123,3.566-3.123,5.288c0,1.721,1.395,3.124,3.123,3.124s3.123-1.399,3.123-3.124
+			C12.987,73.297,9.864,69.738,9.864,69.738z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>

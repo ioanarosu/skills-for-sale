@@ -1,19 +1,27 @@
 @import "_variables";
 @import "_normalize";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html { font-size: 62.5%; }  /* =10px */
 
 body {
   font-family: $body-font;
   color: $body-color;
 }
-h1, h2, h3 {
-  font-family: $heading-font;
+p, a {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2 {
+  font-family: $titles-font;
   font-weight: 400;
-  color: $heading-color;
+  color: $body-color;
   margin-top: 0;
 }
-
 header {
     grid-area: header;
 }
@@ -28,43 +36,74 @@ footer {
   margin: 0 auto;
   background-color: $body-bg-color;
   padding: 2rem;
-  display: grid;
+  grid-template-areas: "header header"
+    "main main"
+    "footer footer";
 }
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap {
+  padding: 2rem;
+}
+.small-wrap {
+  padding: 2rem 1rem;
+}
+.btn-send {
+  border: 1px solid $secundary-color;
+  background-color: transparent;
+  color: $secundary-color;
+  border-radius: .4rem;
+  padding: .8rem 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  margin-top: 2rem;
+}
+
+
+//////////////////////////  FOOTER  ///////////////////////
+footer {
+  text-align: center;
+  background-color: $body-color;
+  .footer-nav {
+    li {
+      display: inline-block;
+    }
+    li a {
+      color: $body-bg-color;
+      font-size: 1.4rem;
+      font-weight: 200;
+      padding: .5rem;
+    }
+  }
+  .social-links {
+    a {
+      display: inline-block;
+      padding: 1.5rem .5rem;
+
+    }
+    li {
+      display: inline-block;
+    }
+    svg {
+      fill: $body-bg-color;
+      width: 1.4rem;
+      height: auto;
+    }
+  }
+
+}
+/////////////////////////   END FOOTER ///////////////////
+
 @import "header";
 @import "search";
-
-.wrap {
-  margin: 2rem;
-}
-
-///////////////////////////  MOST POPULAR///////////////////
-
-.underlined {
-    margin-bottom: 0;
-    font-size: 2.4rem;
-  }
-.semi-line {
-  width: 6.5rem;
-  height: .6rem;
-  border-radius: 4px;
-  background-color: $primary-color;
-
-}
-.pr-category {
-  background-color: $secundary-color;
-  color: $category-name-color;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:1fr 1fr;
-  svg {
-    width: auto;
-    height: 3rem;
-    fill: $category-name-color;
-
-  }
-}
-///////////////////////////  END MOST POPULAR///////////////
-
+@import "most-popular";
+@import "just-listed";
+@import "projects-listing";
+@import "project-page";
 
