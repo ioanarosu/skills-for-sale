@@ -5,6 +5,7 @@
   &__title {
     font-size: 4rem;
     line-height: 1.4;
+    margin-top: 4.5rem;
   }
   &__box {
     display: flex;
@@ -12,7 +13,7 @@
     height: 7rem;
 
     input{
-      flex: 1 0 auto;
+      flex: 1 0 55%;
       border: 1px solid rgba(0, 0, 0, 0.1);
       padding: .5rem 0 .5rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

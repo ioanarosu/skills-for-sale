@@ -20,7 +20,6 @@ h1, h2 {
   font-family: $titles-font;
   font-weight: 400;
   color: $body-color;
-  margin-top: 0;
 }
 header {
     grid-area: header;
@@ -75,6 +74,8 @@ footer {
 
 //////////////////////////  FOOTER  ///////////////////////
 footer {
+  max-width: 140rem;
+  margin: 0 auto;
   text-align: center;
   background-color: $body-color;
   .footer-nav {
