@@ -1,6 +1,5 @@
 @import "_variables";
 .project-page {
-
   .avatar {
     text-align: center;
     &__image {
@@ -41,9 +40,12 @@
     display: grid;
     align-items: center;
     .project-details {
-      align-items: center;
       display: grid;
       grid-template-columns: 1fr 6rem;
+      .take-btn {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
       &__left {
         font-size: 1.7rem;
 
@@ -79,6 +81,14 @@
         padding: .5rem;
 
       }
+      &__right {
+        .take-btn {
+          width: 100%;
+          display: none;
+          margin-top: 0;
+          margin-bottom: 2rem;
+        }
+      }
     }
     .gallery {
       display: none;
@@ -110,7 +120,6 @@
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 2.2rem;
-    margin-top: 1.5rem;
     grid-column-start: 1;
     grid-column-end: 4;
     p {
@@ -138,18 +147,20 @@
       font-weight: 400;
     }
   }
+  &__comments-container {
+    .expand-listing {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
   &__comments {
-    grid-column-start: 1;
-    grid-column-end:   3;
     display: grid;
     grid-column-gap: 2rem;
     grid-template-columns: 6rem auto;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
     .comm {
-      grid-column-start: 2;
-      grid-column-end: 4;
       overflow: hidden;
       margin-top: 0;
       font-size: 1.6rem;
@@ -193,12 +204,8 @@
     display: flex;
     overflow: scroll;
     margin: 2rem 0;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid $border-color;
     .project-card {
       text-align: center;
-      min-width: 14rem;
-      height: 100%;
       box-shadow: none;
       margin-right: 2.5rem;
       padding:0;
@@ -230,14 +237,13 @@
   .response {
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 35rem;
-    margin: 5rem auto;
-    padding: 1rem;
+    max-width: 45rem;
+    margin: 3.5rem auto;
+    padding: 1rem 1rem 5rem 1rem;
     border: 1px solid $secundary-color;
     display: grid;
     align-items: center;
     justify-content: start;
-
     &__placeholder {
       margin-left: 1rem;
       font-size: 1.6rem;
@@ -262,10 +268,27 @@ and (max-width: 1024px) {
        &__images {
         display: none;
       }
+      &__right {
+        .take-btn {
+          display: block;
+        }
+      }
+    }
+  }
+  &__description {
+    margin-top: 1.5rem;
+    .take-btn {
+      display: none;
     }
   }
   .gallery {
     display: inline-grid;
+  }
+  .response {
+    margin: 2rem auto;
+  }
+  .take-btn {
+    margin: 0;
   }
 }
 
@@ -283,6 +306,11 @@ and (min-width: 1024px) {
        &__images {
         display: none;
       }
+      &__right {
+        .take-btn {
+          display: block;
+        }
+      }
     }
 
     .gallery {
@@ -290,8 +318,14 @@ and (min-width: 1024px) {
     }
 
   }
+  &__description {
+    margin-top: 1.5rem;
+    .take-btn {
+      display: none;
+    }
+  }
   &__contest {
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   &__bidders {
     .project-card {
@@ -300,9 +334,10 @@ and (min-width: 1024px) {
   }
   .take-btn {
     width: 25rem;
+    margin: 0;
   }
   .response {
-    width: 55rem;
+    margin: 3.5rem auto;
   }
 }
 

@@ -4,12 +4,17 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
-html { font-size: 62.5%; }  /* =10px */
+html {
+  height: 100%;
+  font-size: 62.5%;
+ }  /* =10px */
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: $body-font;
   color: $body-color;
+  min-height: 100%;
 }
 p, a {
   font-weight: 300;
@@ -21,15 +26,7 @@ h1, h2 {
   font-weight: 400;
   color: $body-color;
 }
-header {
-    grid-area: header;
-}
-.main {
-    grid-area: main;
-}
-footer {
-    grid-area: footer;
-}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -74,6 +71,8 @@ footer {
 
 //////////////////////////  FOOTER  ///////////////////////
 footer {
+  flex: 1 0 auto;
+  width: 100%;
   max-width: 140rem;
   margin: 0 auto;
   text-align: center;
