@@ -15,11 +15,13 @@ body {
   font-family: $body-font;
   color: $body-color;
   min-height: 100%;
+  background: $body-bg-color;
+  font-size: 1.8rem;
 }
 p, a {
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8rem;
 }
 h1, h2 {
   font-family: $titles-font;
@@ -30,7 +32,6 @@ h1, h2 {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  background-color: $body-bg-color;
   padding: 2rem;
   grid-template-areas: "header header"
     "main main"
@@ -63,17 +64,14 @@ h1, h2 {
   padding: .8rem 1rem;
   text-transform: capitalize;
   font-size: 1.4rem;
-  font-weight: 300;
   letter-spacing: .1rem;
   margin-top: 2rem;
 }
-
 
 //////////////////////////  FOOTER  ///////////////////////
 footer {
   flex: 1 0 auto;
   width: 100%;
-  max-width: 140rem;
   margin: 0 auto;
   text-align: center;
   background-color: $body-color;
