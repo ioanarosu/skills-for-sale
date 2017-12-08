@@ -1,0 +1,121 @@
+@import "_variables";
+.ss-company {
+    max-width: 140rem;
+    margin: 2rem auto;
+
+    background-color: $secundary-color;
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 0;
+      }
+    .about-img {
+      position:relative;
+      height: 30rem;
+      width: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__about {
+      text-align: center;
+      background-color: $body-bg-color;
+      border-left: 1px solid rgba($secundary-color, .13);
+      border-bottom: 1px solid rgba($secundary-color, .13);
+      p {
+        text-align: left;
+      }
+    }
+    &__mission {
+      text-align: center;
+      align-self: center;
+      position: relative;
+      padding: 3rem 0;
+      img {
+        max-width: 10rem;
+        margin: 2rem 0;
+      }
+     h1 {
+       color: $body-bg-color;
+       font-weight: 300;
+       font-size: 2.6rem;
+       margin: 2rem 0;
+       line-height: 1.6;
+     }
+     h2 {
+      color: $body-bg-color;
+     }
+    }
+    &__ww {
+      background-color: $body-bg-color;
+      border: 1px solid rgba($secundary-color, .13);
+      .about-img img {
+          width: auto;
+        }
+      ul {
+        text-align: center;
+        white-space: nowrap;
+        li {
+          text-align: center;
+          display: inline-block;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          margin-right: 2rem;
+          border-bottom: 2px solid $primary-color;
+          padding: .5rem;
+          span {
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+          }
+        }
+      }
+    }
+}
+////////////////////////////RESPONSIVE//////////////////////
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px) {
+    .ss-company {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &__mission {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      &__about {
+        .about-img img {
+          width: 103%;
+        }
+      }
+      &__ww {
+        .about-img img {
+          width: auto;
+        }
+      }
+
+  }
+}
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1440px) {
+    .ss-company {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &__mission {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+}
+@media only screen
+  and (min-width: 1440px) {
+    .ss-company {
+      display: grid;
+      grid-template-columns: 1fr 40rem 1fr;
+  }
+}

@@ -1,7 +1,9 @@
 @import "_variables";
 .title-underlined {
     margin-bottom: .5rem;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
   }
 .semi-line {
   width: 4.5rem;
@@ -46,13 +48,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    transition-duration: 1000ms;
+    // transition-duration: 1000ms;
     a {
       color: $category-name-color;
       padding: .5rem;
       display: block;
-      transform: scale(1.3);
-      transition-duration: 3000ms;
+      // transform: scale(1.3);
+      // transition-duration: 3000ms;
       &:hover {
         color: $body-bg-color;
       }
