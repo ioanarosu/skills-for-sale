@@ -3,8 +3,8 @@
 .projects-container {
   display: grid;
   grid-area: main;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1.5rem;
   margin-top: 2rem;
   overflow: scroll;
 }
@@ -12,12 +12,12 @@
   background:$body-bg-color;
   height: 100%;
   box-shadow: 0 0 4px 0 rgb(186, 204, 203);
-  min-width: 18rem;
+  max-width: 26rem;
   margin:2px;
   position: relative;
 
   &__img {
-    height: 10rem;
+    height: 16rem;
     width: auto;
     position:relative;
     overflow: hidden;
@@ -34,7 +34,7 @@
     color: $body-bg-color;
     padding: .7rem;
     font-size: 1.4rem;
-    font-weight:300;
+    font-weight:400;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
     letter-spacing: 0.52px;
     position: absolute;
@@ -95,6 +95,6 @@
 .job-type {
   text-transform: uppercase;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
