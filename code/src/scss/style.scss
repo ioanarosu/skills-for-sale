@@ -32,7 +32,7 @@ h1, h2 {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem 2rem;
   grid-template-areas: "header header"
     "main main"
     "footer footer";
@@ -73,7 +73,7 @@ footer {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: $body-color;
+  background-color: darken($secundary-color, 15%);
   .footer-nav {
     li {
       display: inline-block;
@@ -81,7 +81,7 @@ footer {
     li a {
       color: $body-bg-color;
       font-size: 1.4rem;
-      font-weight: 200;
+      font-weight: 400;
       padding: .5rem;
     }
   }

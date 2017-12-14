@@ -26,16 +26,16 @@
       top:50%;
       left:50%;
       transform:translate(-50%, -50%);
-      width: 100%;
+      width: 110%;
     }
   }
   &__price-box {
-    background-color: $primary-color;
+    background-color: lighten($secundary-color, 15%);
     color: $body-bg-color;
     padding: .7rem;
     font-size: 1.4rem;
     font-weight:400;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 2px 4px 0 rgba(160, 160, 160, 0.5);
     letter-spacing: 0.52px;
     position: absolute;
     top:0;
@@ -43,9 +43,8 @@
   }
   &__job {
     white-space: nowrap;
-    color: $secundary-color;
     margin-bottom:.8rem;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 2rem;
     font-family: $body-font;
     min-width: 18rem;
@@ -63,7 +62,7 @@
     svg {
       width: 1rem;
       height: auto;
-      fill: $secundary-color;
+      fill: lighten($secundary-color, 15%);
     }
   }
   &__title {
@@ -96,5 +95,6 @@
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 600;
+  color: lighten($secundary-color, 15%);
 }
 

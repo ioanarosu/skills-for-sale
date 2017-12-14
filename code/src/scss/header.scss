@@ -31,13 +31,13 @@ nav {
 
 
 .hilighted {
-  background-color: $body-color;
+  background-color: darken($secundary-color, 15%);
   border-radius: .4rem;
   margin-bottom: 0;
-    color: $body-bg-color;
-    font-weight: 200;
-    padding: 1rem;
-    display: inline-block;
+  color: $body-bg-color;
+  font-weight: 200;
+  padding: 1rem;
+  display: inline-block;
 }
 @media only screen
   and (min-width: 1024px) {

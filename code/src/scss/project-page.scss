@@ -1,34 +1,33 @@
 @import "_variables";
 .project-page {
-  .fixed-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: rgba($secundary-color, .83);
-    padding: 2rem;
-    z-index: 100;
+  // .fixed-container {
+  //   display: grid;
+  //   grid-template-columns: auto auto;
+  //   align-items: center;
+  //   position: sticky;
+  //   top: 0;
+  //   background-color: rgba($secundary-color, .83);
+  //   padding: 2rem;
+  //   z-index: 100;
 
-    .take-btn {
-      grid-column-start: 4;
-      width: auto;
-      margin: 0;
-    }
-    h2 {
-      color: $body-bg-color;
-      font-weight: 400;
-      font-size: 2.6rem;
-      margin: 0;
-    }
+  //   .take-btn {
+  //     grid-column-start: 4;
+  //     width: auto;
+  //     margin: 0;
+  //   }
+  //   h2 {
+  //     color: $body-bg-color;
+  //     font-weight: 400;
+  //     font-size: 2.6rem;
+  //     margin: 0;
+  //   }
+  // }
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+    margin-top: 0;
   }
-  h2 {
-      font-size: 3.4rem;
-      font-weight: 600;
-      font-family: $titles-font;
-      margin-bottom: 1.5rem;
-      margin-top: 0;
-    }
   .avatar {
     text-align: center;
     &__image {
@@ -76,7 +75,7 @@
       }
 
       &__price {
-        color: $secundary-color;
+        color: lighten($secundary-color, 15%);
         font-weight:600;
         letter-spacing: .1rem;
       }
@@ -119,6 +118,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
       }
       &__btn {
         background-color: $body-bg-color;
@@ -221,19 +221,31 @@
     .project-card {
       text-align: center;
       box-shadow: none;
-      margin-right: 2.5rem;
+      margin-right: 3.5rem;
       padding:0;
+      &__img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
       &__title {
         text-align: center;
         font-weight: 400;
         color: $body-color;
+        font-size: 1.8rem;
 
       }
       &__reviews {
         margin-bottom: 0;
+        white-space: nowrap;
+        svg {
+          display: none;
+        }
       }
       &__time {
         color: $secundary-color;
+        font-size: 1.4rem;
         font-style: italic;
         font-weight: 400;
         border-top: 1px solid $secundary-color;
@@ -273,6 +285,15 @@
 and (min-width: 768px)
 and (max-width: 1024px) {
   .project-page {
+     &__bidders {
+      .project-card {
+        &__reviews {
+          svg {
+            display: inline-grid;
+          }
+        }
+      }
+    }
     &__infos {
       align-items: left;
       grid-template-columns: 1fr 32rem;
@@ -344,6 +365,11 @@ and (min-width: 1024px) {
   &__bidders {
     .project-card {
       min-width: 18rem;
+      &__reviews {
+        svg {
+          display: inline-grid;
+        }
+      }
     }
   }
   .take-btn {
