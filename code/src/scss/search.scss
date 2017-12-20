@@ -14,6 +14,7 @@
 
     input{
       flex: 1 0 55%;
+      height: 100%;
       border: 1px solid rgba(0, 0, 0, 0.1);
       padding: .5rem 0 .5rem 2rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,6 +23,8 @@
     }
     .btn {
       flex: 1 0 auto;
+      height: 100%;
+      border: 1px solid $primary-color;;
       font-family: $body-font;
       font-size: 1.8rem;
       padding: 1.6rem .8rem;
@@ -32,6 +35,7 @@
       cursor: pointer;
     }
   }
+
 }
 
 ////////////////////////////RESPONSIVE//////////////////////

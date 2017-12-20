@@ -11,6 +11,7 @@ html {
 
 body {
   display: flex;
+  position: relative;
   flex-direction: column;
   font-family: $body-font;
   color: $body-color;
@@ -111,4 +112,9 @@ footer {
 @import "projects-listing";
 @import "project-page";
 @import "about-us";
+@import "register_forms";
+@import "forms";
+@import "add-a-project";
+
+
 

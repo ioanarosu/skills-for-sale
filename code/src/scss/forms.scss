@@ -1,0 +1,85 @@
+@import "_variables";
+.forms {
+h2 {
+  font-size: 2.8rem;
+}
+label {
+  font-weight: 400;
+  font-size: 1.8rem;
+  display: block;
+  color: rgba($body-color, .9);
+}
+input, select, textarea {
+  display: block;
+  border: 1px solid darken($border-color, 8%);
+  width: 100%;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+select {
+  height: 5.8rem;
+  background-color: transparent;
+}
+.body-padded {
+  text-indent: .8rem;
+}
+.currency {
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  grid-column-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  label, select {
+    display: inline-block;
+  }
+  select {
+    width: auto;
+    border: 0;
+    max-width: 20rem;
+    color: $body-color;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+.map {
+  h2 {
+    margin-bottom: 0;
+    margin-top: 3.5rem;
+  }
+  &__alert {
+    color: $body-bg-color;
+    background-color: $primary-color;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  &__box {
+    height: 20rem;
+    background: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+  }
+}
+.save {
+    background: $secundary-color;
+    color: $body-bg-color;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 3px;
+    width: 15rem;
+    height: 6rem;
+    margin-top: 3rem;
+    border: 0;
+  }
+}
+.split-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  label {
+    display: inline-block;
+  }
+}
