@@ -155,7 +155,7 @@
     &__top-bar {
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 2rem;
-      align-items: end;
+      align-items: center;
       border-top: 1px solid $border-color;
       padding: 3rem 0;
       .filters {
@@ -176,4 +176,10 @@
   .listing-page .projects-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+@media only screen
+  and (min-width: 1440px) {
+    .listing-page .projects-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }

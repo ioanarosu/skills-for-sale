@@ -9,30 +9,30 @@
   }
   &__box {
     display: flex;
-    grid-area: main;
-    height: 7rem;
-
     input{
       flex: 1 0 55%;
-      height: 100%;
       border: 1px solid rgba(0, 0, 0, 0.1);
-      padding: .5rem 0 .5rem 2rem;
+      padding: 2rem 1.5rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       font-size: 1.6rem;
       font-weight: 400;
     }
     .btn {
       flex: 1 0 auto;
-      height: 100%;
-      border: 1px solid $primary-color;;
+      border: 1px solid $primary-color;
       font-family: $body-font;
-      font-size: 1.8rem;
-      padding: 1.6rem .8rem;
-      color: #fff;
+      color: $body-bg-color;
       background-color: $primary-color;
       border-radius: .5rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       cursor: pointer;
+    }
+    &--large {
+      input {
+        padding: 3rem 1.5rem;
+        font-size: 1.8rem;
+        flex: 1 0 65%;
+      }
     }
   }
 
@@ -43,8 +43,5 @@
   and (min-width: 1024px){
   .search-area {
     max-width: 1024px;
-    input{
-      flex: 1 0 75%;
-    }
   }
 }

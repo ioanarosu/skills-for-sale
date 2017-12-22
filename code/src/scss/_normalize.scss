@@ -14,9 +14,7 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-* {
-  box-sizing: border-box;
-}
+
 /* Sections
    ========================================================================== */
 
@@ -248,11 +246,11 @@ optgroup,
 select,
 textarea {
   font-family: $body-font; /* 1 */
-  font-size: 1.4rem;
+  font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
-  border: 1px solid #e5eaec;
-  color: #484848;
-  margin: .5rem 0 1.5rem 0;
+  margin: 0; /* 2 */
+  border: 0;
+  color: #022D41;
 }
 
 /**
