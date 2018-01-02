@@ -10,7 +10,7 @@
   //   padding: 2rem;
   //   z-index: 100;
 
-  //   .take-btn {
+  //   .primary-btn {
   //     grid-column-start: 4;
   //     width: auto;
   //     margin: 0;
@@ -64,7 +64,7 @@
     .project-details {
       display: grid;
       grid-template-columns: 1fr 6rem;
-      .take-btn {
+      .primary-btn {
         grid-column-start: 1;
         grid-column-end: 4;
       }
@@ -98,7 +98,7 @@
 
       }
       &__right {
-        .take-btn {
+        .primary-btn {
           width: 100%;
           display: none;
           margin-top: 0;
@@ -203,17 +203,7 @@
       cursor: pointer;
     }
   }
-  .take-btn {
-    background-color: $primary-color;
-    color: $body-bg-color;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 1.2rem;
-    border-radius: .4rem;
-    cursor: pointer;
-    margin: 2rem auto;
-    width: 20rem;
-  }
+
   &__bidders {
     display: flex;
     overflow: scroll;
@@ -304,7 +294,7 @@ and (max-width: 1024px) {
         display: none;
       }
       &__right {
-        .take-btn {
+        .primary-btn {
           display: block;
         }
       }
@@ -312,7 +302,7 @@ and (max-width: 1024px) {
   }
   &__description {
     margin-top: 1.5rem;
-    .take-btn {
+    .primary-btn {
       display: none;
     }
   }
@@ -322,7 +312,7 @@ and (max-width: 1024px) {
   .response {
     margin: 2rem auto;
   }
-  .take-btn {
+  .primary-btn {
     margin: 0;
   }
 }
@@ -342,7 +332,7 @@ and (min-width: 1024px) {
         display: none;
       }
       &__right {
-        .take-btn {
+        .primary-btn {
           display: block;
         }
       }
@@ -355,7 +345,7 @@ and (min-width: 1024px) {
   }
   &__description {
     margin-top: 1.5rem;
-    .take-btn {
+    .primary-btn {
       display: none;
     }
   }
@@ -372,7 +362,7 @@ and (min-width: 1024px) {
       }
     }
   }
-  .take-btn {
+  .primary-btn {
     width: 25rem;
     margin: 0;
   }

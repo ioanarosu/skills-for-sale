@@ -63,17 +63,7 @@ select {
     background-position: 50% 60%;
   }
 }
-.save {
-    background: $secundary-color;
-    color: $body-bg-color;
-    padding: 1rem;
-    font-size: 2rem;
-    border-radius: 3px;
-    width: 15rem;
-    height: 6rem;
-    margin-top: 3rem;
-    border: 0;
-  }
+
 }
 .split-container {
   display: grid;
@@ -83,3 +73,4 @@ select {
     display: inline-block;
   }
 }
+

@@ -1,0 +1,22 @@
+@import "_variables";
+.owner-page {
+  display: grid;
+  grid-template-columns: 24rem 2fr;
+  grid-column-gap: 2rem;
+  &__profile {
+    .profile__image {
+      background: url(../images/lawyer.jpg) no-repeat no-repeat center center;
+      background-size: cover;
+      width: auto;
+      height: 24rem;
+    }
+    .profile__details {
+      .reviews {
+        svg {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+}
