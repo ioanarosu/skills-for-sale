@@ -38,7 +38,7 @@ h1, h2 {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem;
   grid-template-areas: "header header"
     "main main"
     "footer footer";
@@ -55,7 +55,7 @@ h1, h2 {
     width: 20rem;
   }
 .secundary-btn {
-  background: $secundary-color;
+  background: lighten($secundary-color, 20%);
   color: $body-bg-color;
   padding: 1rem;
   font-size: 2rem;
@@ -81,7 +81,7 @@ h1, h2 {
   padding: 2rem;
 }
 .small-wrap {
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 .btn-send {
   border: 1px solid $secundary-color;

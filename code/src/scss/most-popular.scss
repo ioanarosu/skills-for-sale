@@ -4,6 +4,7 @@
     font-size: 2.8rem;
     text-transform: capitalize;
     font-weight: 400;
+    margin-top: 0;
   }
 .semi-line {
   width: 4.5rem;
@@ -49,7 +50,7 @@
     height: 100%;
     // transition-duration: 1000ms;
     a {
-      color: $category-name-color;
+      color: lighten($body-color, 50%);
       padding: .5rem;
       display: block;
       // transform: scale(1.3);

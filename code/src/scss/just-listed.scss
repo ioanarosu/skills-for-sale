@@ -4,7 +4,7 @@
   display: grid;
   grid-area: main;
   grid-template-columns: repeat(5, 1fr);
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 2rem;
   margin-top: 2rem;
   overflow: scroll;
 }
@@ -13,8 +13,11 @@
   height: 100%;
   box-shadow: 0 0 4px 0 rgb(186, 204, 203);
   max-width: 35rem;
-  margin:2px;
+  margin-top: 1rem;
+  margin-bottom:4rem;
   position: relative;
+  transform: scale(1,1);
+  transition-duration: 1000ms;
 
   &__img {
     height: 16rem;
@@ -33,7 +36,7 @@
     background-color: lighten($secundary-color, 15%);
     color: $body-bg-color;
     padding: .7rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight:400;
     box-shadow: 0 2px 4px 0 rgba(160, 160, 160, 0.5);
     letter-spacing: 0.52px;
@@ -43,7 +46,7 @@
   }
   &__job {
     white-space: nowrap;
-    margin-bottom:.8rem;
+    line-height: 1.8;
     font-weight: 600;
     font-size: 2rem;
     font-family: $body-font;
@@ -83,7 +86,9 @@
     }
   }
   &:hover {
-    box-shadow: 0 2px 6px 0 $category-name-color;
+    box-shadow: 0 7px 21px 0 rgba(0,0,0,.1);
+    transform: scale(1.05,1.05);
+    transition-duration: 1000ms;
   }
 }
 .horizontal-line {

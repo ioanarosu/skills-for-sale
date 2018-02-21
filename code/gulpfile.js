@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var htmlPartials = require('gulp-html-partial');
-var connect = require('gulp-connect');
+var webserver = require('gulp-webserver');
 var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean');
 var image = require('gulp-image');
@@ -15,7 +15,6 @@ gulp.task('sass', function () {
                 cascade: false
               }))
              .pipe(gulp.dest('build/css'))
-             .pipe(connect.reload())
 });
 
 gulp.task('html', function (){
@@ -24,7 +23,6 @@ gulp.task('html', function (){
     basePath: 'src/partials/'
     }))
   .pipe(gulp.dest('build'))
-  .pipe(connect.reload())
 });
 
 gulp.task('clean', function (){
@@ -32,12 +30,14 @@ gulp.task('clean', function (){
   .pipe(clean());
   });
 
-gulp.task('connect', function () {
-  connect.server ({
-    root: 'build',
-    livereload: true,
-    port: 1337
-    });
+gulp.task('webserver', function () {
+  gulp.src('build')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      port: 1337,
+      open: true
+    }));
   });
 
 gulp.task('watch', function () {
@@ -49,13 +49,11 @@ gulp.task('images', function () {
   gulp.src(['src/images/**/*.*'])
   //.pipe(image())
   .pipe(gulp.dest('build/images'))
-  .pipe(connect.reload())
 });
 
 gulp.task('js', function () {
   gulp.src(['src/js/**/*.js'])
   .pipe(gulp.dest('build/js'))
-  .pipe(connect.reload())
 });
 
-gulp.task('default', ['sass', 'html', 'connect', 'images', 'watch']);
+gulp.task('default', ['sass', 'html', 'webserver', 'images', 'watch']);

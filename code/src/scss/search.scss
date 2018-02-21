@@ -1,11 +1,32 @@
 @import "_variables";
+.logo-copy {
+   // font-family: 'Poiret One', cursive;
+   // font-family: 'Shadows Into Light Two', cursive;
+   font-family: 'Homemade Apple', cursive;
+   font-size: 6rem;
+   color: $secundary-color;
+   text-align: center;
+   margin: 0;
+   display: inline;
+   background-image: -webkit-linear-gradient(left, $primary-color, $secundary-color); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, $primary-color, $secundary-color); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, $primary-color, $secundary-color); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, $primary-color, $secundary-color); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, $primary-color, $secundary-color); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 .search-area {
     max-width: 85rem;
     margin: 0 auto 8rem auto;
+    text-align: center;
+    background-color: linear-gradient(to right, $primary-color, $secundary-color);
   &__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-family: 'Encode Sans Expanded', sans-serif;
     line-height: 1.4;
-    margin-top: 4.5rem;
+    font-weight: 300;
   }
   &__box {
     display: flex;
@@ -20,12 +41,17 @@
     .btn {
       flex: 1 0 auto;
       border: 1px solid $primary-color;
+      font-size: 2rem;
       font-family: $body-font;
       color: $body-bg-color;
+      letter-spacing: .6px;
       background-color: $primary-color;
       border-radius: .5rem;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       cursor: pointer;
+      &:hover {
+        background-color: darken($primary-color, 2%);
+      }
     }
     &--large {
       input {
@@ -42,6 +68,6 @@
 @media only screen
   and (min-width: 1024px){
   .search-area {
-    max-width: 1024px;
+    max-width: 100rem;
   }
 }
