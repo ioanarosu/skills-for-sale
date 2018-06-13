@@ -1,0 +1,157 @@
+.listing-page__top-categories {
+  display: none; }
+  .listing-page__top-categories li {
+    display: inline;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .listing-page__top-categories a {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #474747;
+    font-weight: 400;
+    line-height: 1.8;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px; }
+    .listing-page__top-categories a:hover {
+      border-bottom: 1px solid #355C7D; }
+
+.listing-page__top-bar {
+  display: grid;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5eaec; }
+  .listing-page__top-bar .filters {
+    margin-top: 2rem; }
+    .listing-page__top-bar .filters button {
+      font-size: 1.6rem;
+      font-weight: 400;
+      position: relative;
+      margin-right: .8rem;
+      border-radius: .3rem;
+      padding: 1rem;
+      background-color: #355C7D;
+      color: #f1f1f1; }
+    .listing-page__top-bar .filters .close {
+      font-size: 1.2rem;
+      font-weight: 200;
+      margin-left: .5rem; }
+    .listing-page__top-bar .filters__more {
+      font-size: 1.6rem;
+      font-weight: 400;
+      background-color: #e5eaec;
+      border-radius: .3rem;
+      padding: 1rem;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .listing-page__top-bar .filters__more svg {
+        fill: #474747;
+        width: 1rem;
+        height: auto; }
+  .listing-page__top-bar .search-area {
+    width: auto;
+    margin: inherit;
+    grid-row-start: 1; }
+    .listing-page__top-bar .search-area__box {
+      height: auto; }
+
+.listing-page .projects-container {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  overflow: inherit; }
+  .listing-page .projects-container .project-card {
+    margin-bottom: 2.5rem; }
+
+.search-results {
+  font-size: 1.8rem;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-top: 2.5rem; }
+
+.pagination {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 2rem 0; }
+  .pagination li, .pagination a {
+    display: inline-block;
+    font-size: 1.4rem; }
+  .pagination a {
+    padding: 0 .5rem; }
+  .pagination__full-circle {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 1.6rem;
+    line-height: 3.2rem;
+    background-color: #355C7D;
+    color: #ffffff; }
+  .pagination__empty-circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.6rem;
+    line-height: 3rem;
+    border: 1px solid #355C7D; }
+  .pagination svg {
+    width: 1rem;
+    height: auto;
+    fill: #355C7D; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .listing-page__top-categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .listing-page__top-bar {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+    border-top: 1px solid #e5eaec;
+    padding: 3rem 0; }
+    .listing-page__top-bar .filters {
+      margin-top: 0; }
+      .listing-page__top-bar .filters button {
+        padding: 1.5rem; }
+      .listing-page__top-bar .filters__more {
+        padding: 1.5rem; }
+    .listing-page__top-bar .search-area {
+      grid-row-start: initial; }
+  .listing-page .projects-container {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media only screen and (min-width: 1024px) {
+  .listing-page__top-categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .listing-page__top-bar {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #e5eaec;
+    padding: 3rem 0; }
+    .listing-page__top-bar .filters {
+      margin-top: 0; }
+      .listing-page__top-bar .filters button {
+        padding: 1.5rem; }
+      .listing-page__top-bar .filters__more {
+        padding: 1.5rem; }
+    .listing-page__top-bar .search-area {
+      grid-row-start: initial; }
+  .listing-page .projects-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media only screen and (min-width: 1440px) {
+  .listing-page .projects-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }

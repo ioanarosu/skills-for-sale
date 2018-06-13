@@ -1,0 +1,38 @@
+header {
+  border-bottom: 1px solid #e5eaec; }
+
+nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 2rem;
+  grid-area: header;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  nav .top-nav {
+    text-align: right; }
+    nav .top-nav li {
+      display: inline-block; }
+    nav .top-nav a {
+      display: inline-block;
+      margin: .3rem;
+      font-size: 1.4rem;
+      font-weight: 400; }
+  nav img {
+    width: 6rem;
+    height: auto; }
+
+.hilighted {
+  background-color: #1e3447;
+  border-radius: .4rem;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 200;
+  padding: 1rem;
+  display: inline-block; }
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    max-width: 140rem; } }

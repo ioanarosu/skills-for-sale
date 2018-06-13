@@ -1,0 +1,86 @@
+.ss-company {
+  max-width: 140rem;
+  margin: 2rem auto;
+  background-color: #355C7D; }
+  .ss-company h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0; }
+  .ss-company .about-img {
+    position: relative;
+    height: 30rem;
+    width: auto;
+    overflow: hidden; }
+    .ss-company .about-img img {
+      width: 100%; }
+  .ss-company__about {
+    text-align: center;
+    background-color: #ffffff;
+    border-left: 1px solid rgba(53, 92, 125, 0.13);
+    border-bottom: 1px solid rgba(53, 92, 125, 0.13); }
+    .ss-company__about p {
+      text-align: left; }
+  .ss-company__mission {
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: relative;
+    padding: 3rem 1.5rem; }
+    .ss-company__mission img {
+      max-width: 10rem;
+      margin: 2rem 0; }
+    .ss-company__mission h1 {
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 3.8rem;
+      margin: 2rem 0;
+      line-height: 1.6; }
+    .ss-company__mission h2 {
+      color: #ffffff; }
+  .ss-company__ww {
+    background-color: #ffffff;
+    border: 1px solid rgba(53, 92, 125, 0.13); }
+    .ss-company__ww .about-img img {
+      width: auto; }
+    .ss-company__ww ul {
+      text-align: center;
+      white-space: nowrap; }
+      .ss-company__ww ul li {
+        text-align: center;
+        display: inline-block;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-right: 2rem;
+        border-bottom: 2px solid #F67280;
+        padding: .5rem; }
+        .ss-company__ww ul li span {
+          font-size: 1.8rem;
+          font-weight: 400;
+          font-family: 'Lato', sans-serif; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ss-company {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .ss-company__mission {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+    .ss-company__about .about-img img {
+      width: 103%; }
+    .ss-company__ww .about-img img {
+      width: auto; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .ss-company {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .ss-company__mission {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+
+@media only screen and (min-width: 1440px) {
+  .ss-company {
+    display: grid;
+    grid-template-columns: 1fr 40rem 1fr; } }

@@ -1,0 +1,100 @@
+.projects-container {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+  overflow: scroll; }
+
+.project-card {
+  background: #ffffff;
+  height: 100%;
+  -webkit-box-shadow: 0 0 4px 0 #bacccb;
+  box-shadow: 0 0 4px 0 #bacccb;
+  max-width: 35rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  position: relative;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-duration: 1000ms;
+  transition-duration: 1000ms; }
+  .project-card__img {
+    height: 16rem;
+    width: auto;
+    position: relative;
+    overflow: hidden; }
+    .project-card__img img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 110%; }
+  .project-card__price-box {
+    background-color: #4c84b3;
+    color: #ffffff;
+    padding: .7rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(160, 160, 160, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(160, 160, 160, 0.5);
+    letter-spacing: 0.52px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .project-card__job {
+    white-space: nowrap;
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    min-width: 18rem;
+    max-width: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .project-card__reviews {
+    margin-bottom: 1rem; }
+    .project-card__reviews .totalrew {
+      padding-left: .5rem;
+      font-size: 1.4rem; }
+    .project-card__reviews svg {
+      width: 1rem;
+      height: auto;
+      fill: #4c84b3; }
+  .project-card__title {
+    font-size: 1.6rem;
+    margin: .6rem 0; }
+  .project-card__details {
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap; }
+    .project-card__details svg {
+      width: 1.6rem;
+      height: auto;
+      fill: #474747;
+      margin-right: .6rem; }
+  .project-card:hover {
+    -webkit-box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms; }
+
+.horizontal-line {
+  height: .1rem;
+  background-color: #f1f1f1;
+  margin: 1.5rem 0; }
+
+.job-type {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4c84b3; }

@@ -1,0 +1,93 @@
+.title-underlined {
+  margin-bottom: .5rem;
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: 0; }
+
+.semi-line {
+  width: 4.5rem;
+  height: .6rem;
+  border-radius: 4px;
+  background-color: #F67280; }
+
+.job-category {
+  max-width: 140rem;
+  margin: 2rem auto 0 auto;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .1rem;
+  background-color: rgba(53, 92, 125, 0.55); }
+  .job-category__box {
+    text-align: center;
+    background-color: #355C7D;
+    padding: 5rem .3rem;
+    position: relative; }
+    .job-category__box:hover .job-category__items {
+      opacity: 1; }
+      .job-category__box:hover .job-category__items a {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition-duration: 800ms;
+        transition-duration: 800ms; }
+  .job-category__items {
+    display: grid;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    opacity: 0;
+    background-color: #2d4f6b;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .job-category__items a {
+      color: #c7c7c7;
+      padding: .5rem;
+      display: block; }
+      .job-category__items a:hover {
+        color: #ffffff; }
+    .job-category__items .more {
+      color: #F67280;
+      font-weight: 600; }
+  .job-category__title {
+    color: #f1f1f1;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.1px;
+    margin-top: 1.2rem;
+    line-height: 1.3;
+    font-weight: 300;
+    font-size: 1.8rem; }
+  .job-category svg {
+    width: auto;
+    height: 3rem;
+    fill: #f1f1f1; }
+
+.expand-listing {
+  text-align: right; }
+  .expand-listing a {
+    font-size: 1.4rem;
+    color: #474747;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .5rem;
+    border: 1px solid #474747;
+    text-align: center;
+    border-radius: .3rem; }
+  .expand-listing svg {
+    width: 1rem;
+    height: auto;
+    fill: #474747;
+    margin-left: 1rem; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .job-category {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 1024px) {
+  .job-category {
+    grid-template-columns: repeat(6, 1fr); }
+    .job-category__box {
+      padding: 8rem .3rem; } }

@@ -1,0 +1,68 @@
+.logo-copy {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 6rem;
+  color: #355C7D;
+  text-align: center;
+  margin: 0;
+  display: inline;
+  /* For Chrome and Safari */
+  /* For old Fx (3.6 to 15) */
+  /* For pre-releases of IE 10*/
+  /* For old Opera (11.1 to 12.0) */
+  background-image: -webkit-gradient(linear, left top, right top, from(#F67280), to(#355C7D));
+  background-image: linear-gradient(to right, #F67280, #355C7D);
+  /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
+
+.search-area {
+  max-width: 85rem;
+  margin: 0 auto 8rem auto;
+  text-align: center;
+  background-color: linear-gradient(to right, #F67280, #355C7D); }
+  .search-area__title {
+    font-size: 3.5rem;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    line-height: 1.4;
+    font-weight: 300; }
+  .search-area__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .search-area__box input {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 55%;
+      flex: 1 0 55%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 2rem 1.5rem;
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 1.6rem;
+      font-weight: 400; }
+    .search-area__box .btn {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      border: 1px solid #F67280;
+      font-size: 2rem;
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff;
+      letter-spacing: .6px;
+      background-color: #F67280;
+      border-radius: .5rem;
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
+      .search-area__box .btn:hover {
+        background-color: #f56877; }
+    .search-area__box--large input {
+      padding: 3rem 1.5rem;
+      font-size: 1.8rem;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 65%;
+      flex: 1 0 65%; }
+
+@media only screen and (min-width: 1024px) {
+  .search-area {
+    max-width: 100rem; } }
