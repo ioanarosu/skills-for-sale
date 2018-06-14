@@ -2,7 +2,7 @@
 
 Skills for sale is a website where people can find the proper jobs for their skills.
 
-## Sketck source
+## Sketch source
 
 https://www.dropbox.com/s/39m7g2cjptfyk4d/skills-for-sale.sketch?dl=0
 
