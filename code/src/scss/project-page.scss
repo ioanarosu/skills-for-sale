@@ -60,7 +60,7 @@
   }
   &__infos {
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     .project-details {
       display: grid;
       grid-template-columns: 1fr 6rem;
@@ -108,12 +108,12 @@
     }
     .gallery {
       display: none;
-      width: 32rem;
+      width: 100%;
       height: 20rem;
       overflow: hidden;
       position: relative;
       img {
-        max-width: 34rem;
+        max-width: 500rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -291,7 +291,7 @@ and (max-width: 1024px) {
     }
     &__infos {
       align-items: left;
-      grid-template-columns: 1fr 32rem;
+      grid-template-columns: 2fr 1fr;
       grid-column-gap: 2rem;
       .project-details {
        align-items: start;
@@ -328,8 +328,8 @@ and (max-width: 1024px) {
 and (min-width: 1024px) {
   .project-page {
     &__infos {
-      align-items: left;
-      grid-template-columns: 1fr 32rem;
+      align-items: flex-start;
+      grid-template-columns: 2fr 1fr;
       grid-column-gap: 2rem;
       .project-details {
        align-items: start;

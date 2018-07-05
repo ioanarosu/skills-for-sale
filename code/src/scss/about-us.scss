@@ -104,7 +104,6 @@
   and (max-width: 1440px) {
     .ss-company {
       display: grid;
-      grid-template-columns: 1fr 1fr;
       &__mission {
         grid-row-start: 1;
         grid-column-start: 1;
