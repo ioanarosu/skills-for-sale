@@ -1020,9 +1020,9 @@ nav {
 
 .project-page__infos {
   display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .project-page__infos .project-details {
     display: grid;
     grid-template-columns: 1fr 6rem; }
@@ -1053,12 +1053,12 @@ nav {
       margin-bottom: 2rem; }
   .project-page__infos .gallery {
     display: none;
-    width: 32rem;
+    width: 100%;
     height: 20rem;
     overflow: hidden;
     position: relative; }
     .project-page__infos .gallery img {
-      max-width: 34rem;
+      max-width: 500rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1207,7 +1207,7 @@ nav {
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
-    grid-template-columns: 1fr 32rem;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 2rem; }
     .project-page__infos .project-details {
       -webkit-box-align: start;
@@ -1230,10 +1230,10 @@ nav {
 
 @media only screen and (min-width: 1024px) {
   .project-page__infos {
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    grid-template-columns: 1fr 32rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 2rem; }
     .project-page__infos .project-details {
       -webkit-box-align: start;
@@ -1336,8 +1336,7 @@ nav {
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .ss-company {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
+    display: grid; }
     .ss-company__mission {
       grid-row-start: 1;
       grid-column-start: 1;
@@ -1526,6 +1525,8 @@ nav {
     line-height: 1.4; }
   .form-container label {
     margin-bottom: .8rem; }
+  .form-container input, .form-container select, .form-container textarea {
+    font-size: 1.4rem; }
 
 .project-page__title {
   font-size: 3.6rem;
@@ -1560,9 +1561,9 @@ nav {
 
 .project-page__infos {
   display: grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .project-page__infos .project-details {
     display: grid;
     grid-template-columns: 1fr 6rem; }
@@ -1593,12 +1594,12 @@ nav {
       margin-bottom: 2rem; }
   .project-page__infos .gallery {
     display: none;
-    width: 32rem;
+    width: 100%;
     height: 20rem;
     overflow: hidden;
     position: relative; }
     .project-page__infos .gallery img {
-      max-width: 34rem;
+      max-width: 500rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1747,7 +1748,7 @@ nav {
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
-    grid-template-columns: 1fr 32rem;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 2rem; }
     .project-page__infos .project-details {
       -webkit-box-align: start;
@@ -1770,10 +1771,10 @@ nav {
 
 @media only screen and (min-width: 1024px) {
   .project-page__infos {
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    grid-template-columns: 1fr 32rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 2rem; }
     .project-page__infos .project-details {
       -webkit-box-align: start;
