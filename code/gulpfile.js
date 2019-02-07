@@ -56,7 +56,7 @@ function watch() {
 }
 
 function clean_docs(){
-  return gulp.src('../docs/**/*.*', {read: false}).pipe(clean());
+  return gulp.src('../docs/**/*.*', {read: false}).pipe(clean({force: true}));
 }
 
 function copy_docs(){
@@ -64,4 +64,4 @@ function copy_docs(){
 }
 
 exports.default = gulp.series(clean_code, gulp.parallel(sass_css, js, images, html), server, watch);
-exports.deploy = gulp.parallel(clean_docs, gulp.parallel(sass_css, js, images, html), copy_docs);
+exports.deploy = gulp.series(clean_docs, gulp.parallel(sass_css, js, images, html), copy_docs);
